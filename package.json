@@ -1,0 +1,74 @@
+{
+    "name": "RecordAndShare",
+    "version": "1.1.0",
+    "main": "src/index.js",
+    "dependencies": {
+        "babel-core": "^6.4.5",
+        "babel-loader": "^6.2.1",
+        "babel-preset-es2015": "^6.3.13",
+        "babel-preset-react": "^6.3.13",
+        "classnames": "^2.2.3",
+        "cordova-android": "^6.2.3",
+        "cordova-plugin-compat": "^1.1.0",
+        "cordova-plugin-email-composer": "^0.8.7",
+        "cordova-plugin-file": "^4.3.3",
+        "cordova-plugin-globalization": "^1.0.7",
+        "cordova-plugin-media": "^3.0.1",
+        "cordova-plugin-splashscreen": "^4.0.3",
+        "cordova-plugin-statusbar": "^2.2.3",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "file-loader": "^0.11.2",
+        "material-ui": "^0.18.5",
+        "material-ui-icons": "^1.0.0-alpha.19",
+        "moment": "^2.18.1",
+        "moment-duration-format": "^1.3.0",
+        "pui-css-grids": "^8.3.1",
+        "react": "^15.3.0",
+        "react-addons-css-transition-group": "^15.3.0",
+        "react-dom": "^15.3.0",
+        "react-redux": "^5.0.5",
+        "react-tap-event-plugin": "^2.0.1",
+        "react-tappable": "^0.8.3",
+        "redux": "^3.7.0",
+        "redux-logger": "^3.0.6",
+        "redux-promise-middleware": "^4.3.0",
+        "redux-thunk": "^2.2.0",
+        "typeface-roboto": "0.0.29",
+        "webpack": "^1.12.12",
+        "webpack-dev-server": "^1.14.1"
+    },
+    "devDependencies": {
+        "babel-preset-react-hmre": "^1.0.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "css-loader": "^0.23.1",
+        "elementtree": "^0.1.6",
+        "replace": "^0.3.0",
+        "style-loader": "^0.13.0",
+        "webpack-merge": "^0.7.3"
+    },
+    "scripts": {
+        "android-cold": "npm run build && cordova run android",
+        "android-hot": "cordova run android",
+        "ios": "cordova run ios",
+        "prepare": "node config && webpack && cordova prepare",
+        "build": "node config && webpack && cordova build --release",
+        "start": "node config && HOST=0.0.0.0 webpack-dev-server"
+    },
+    "keywords": [],
+    "author": "Akram MECHERI",
+    "private": true,
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-media": {},
+            "cordova-plugin-file": {},
+            "cordova-plugin-globalization": {},
+            "cordova-plugin-email-composer": {},
+            "cordova-plugin-splashscreen": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
+}
